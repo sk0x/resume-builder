@@ -1,56 +1,92 @@
 export const LandingData = {
     hero: {
-        headline: "Create a Professional Resume in Minutes",
-        subheadline: "Stand out from the crowd with our expert-designed templates and easy-to-use builder",
+        headline: "Create Your Dream Career-Winning Resume in Just Minutes",
+        subheadline: "Unlock your professional potential with AI-powered design, industry-specific insights, and templates that get you noticed by top recruiters. Transform your career story from ordinary to extraordinary—no design skills required.",
         ctaButton: {
             text: "Build Your Resume Now",
             url: "/builder"
         },
-        supportingText: "Trusted by over 2 million job seekers worldwide",
+        supportingInfo: {
+            img: "/assets/trust.png",
+            text: "Trusted by over 2 million job seekers worldwide",
+        },
         image: "/images/hero-image.jpg"
     },
-    features: [
-        {
-            title: "Professional Templates",
-            description: "Choose from 50+ ATS-friendly templates designed by career experts",
-            icon: "template-icon.svg"
-        },
-        {
-            title: "Easy Customization",
-            description: "Personalize colors, fonts, and layouts to match your professional style",
-            icon: "customize-icon.svg"
-        },
-        {
-            title: "Content Suggestions",
-            description: "Get AI-powered suggestions for skills, achievements, and job descriptions",
-            icon: "content-icon.svg"
-        },
-        {
-            title: "Multiple Export Options",
-            description: "Download your resume as PDF, DOCX, or TXT formats",
-            icon: "download-icon.svg"
-        }
-    ],
-    testimonials: [
-        {
-            quote: "I landed my dream job within 2 weeks of using this resume builder. The templates are professional and the guidance was invaluable.",
-            author: "Sarah J.",
-            position: "Marketing Manager",
-            image: "/images/testimonial-1.jpg"
-        },
-        {
-            quote: "As someone who struggled with writing my resume, this tool made the process incredibly simple. Highly recommended!",
-            author: "Michael T.",
-            position: "Software Developer",
-            image: "/images/testimonial-2.jpg"
-        },
-        {
-            quote: "The ATS-friendly templates helped my resume get past the initial screening. I'm now employed at a Fortune 500 company!",
-            author: "Jessica R.",
-            position: "Financial Analyst",
-            image: "/images/testimonial-3.jpg"
-        }
-    ],
+    features: {
+        heading: "The next gen CV Builder",
+        featureList: [
+            {
+                title: "Professional Templates",
+                description: "Choose from 50+ ATS-friendly templates designed by career experts",
+                icon: "template-icon.svg"
+            },
+            {
+                title: "Easy Customization",
+                description: "Personalize colors, fonts, and layouts to match your professional style",
+                icon: "customize-icon.svg"
+            },
+            {
+                title: "Content Suggestions",
+                description: "Get AI-powered suggestions for skills, achievements, and job descriptions",
+                icon: "content-icon.svg"
+            },
+            {
+                title: "Multiple Export Options",
+                description: "Download your resume as PDF, DOCX, or TXT formats",
+                icon: "download-icon.svg"
+            }
+        ],
+    },
+    testimonials: {
+        heading: "What Our Clients Say",
+        subheading: "Real stories from real people who trusted us with their vision — and saw it come to life. Here's what they had to say about their experience.",
+        testimoinallist: [
+            {
+                quote: "I landed my dream job within 2 weeks of using this resume builder. The templates are professional and the guidance was invaluable.",
+                author: "Sarah J.",
+                position: "Marketing Manager",
+                image: "/images/testimonial-1.jpg"
+            },
+            {
+                quote: "As someone who struggled with writing my resume, this tool made the process incredibly simple. Highly recommended!",
+                author: "Michael T.",
+                position: "Software Developer",
+                image: "/images/testimonial-2.jpg"
+            },
+            {
+                quote: "The ATS-friendly templates helped my resume get past the initial screening. I'm now employed at a Fortune 500 company!",
+                author: "Jessica R.",
+                position: "Financial Analyst",
+                image: "/images/testimonial-3.jpg"
+            }
+        ]
+    },
+    templates: {
+        heading: "Choose from our widest range of CV themes",
+        subheading: "Choose from our widest range of wisely designed CV themes and increase the chances of getting your dream job",
+        templateList: [
+            {
+                id: 1,
+                img: "/templateImages/temp1.png" ,
+            },
+            {
+                id: 2,
+                img: "/templateImages/temp2.png" ,
+            },
+            {
+                id: 3,
+                img: "/templateImages/temp3.png" ,
+            },
+            {
+                id: 4,
+                img: "/templateImages/temp4.png" ,
+            },
+            {
+                id: 5,
+                img: "/templateImages/temp5.png" ,
+            },
+        ],
+    },
     statsSection: {
         headline: "Trusted by Job Seekers Worldwide",
         stats: [
@@ -69,16 +105,13 @@ export const AboutData = {}
 export const NavbarData = {
     logo : {
         img: "",
-        text: ""
+        text: "ResBuilder"
     },
     main: [
-      { name: "Home", url: "/" },
-      { name: "Templates", url: "/templates" },
-      { name: "Resume Builder", url: "/builder" },
-      { name: "CV Builder", url: "/cv-builder" },
-      { name: "Career Resources", url: "/resources" },
-      { name: "Pricing", url: "/pricing" },
-      { name: "Contact", url: "/contact" }
+        { name: "Templates", url: "/templates" },
+        { name: "Examples", url: "/examples" },
+        { name: "About us", url: "/aboutus" },
+        { name: "Pricing", url: "/pricing" },
     ],
 }
 

@@ -7,19 +7,19 @@ function App() {
         <Router>
             <Routes>
                 {/* Public pages */}
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/sign-up" element={<SignUpPage />} />
                 <Route element={<RootLayout/>}>
                     <Route path="/" element={<LandingPage />} />
-                    <Route path="/login" element={<LoginPage />} />
-                    <Route path="/sign-up" element={<SignUpPage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/templates" element={<TemplatesPage />} />
                     {/* Private */ }
-                    <Route element={<DashboardLayout/>}>
-                        <Route path="/resume/:resumeId" element={<ResumeEditPage/>}/>
-                        <Route path="/dashboard" element={<DashboardPage/>}/>
-                    </Route>
-                    <Route path="*" element={<NotFoundPage/>}/>
                 </Route>
+                <Route element={<DashboardLayout/>}>
+                    <Route path="/resume/:resumeId" element={<ResumeEditPage/>}/>
+                    <Route path="/dashboard" element={<DashboardPage/>}/>
+                </Route>
+                <Route path="*" element={<NotFoundPage/>}/>
             </Routes >
         </Router >
     )
