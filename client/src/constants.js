@@ -45,18 +45,21 @@ export const LandingData = {
                 quote: "I landed my dream job within 2 weeks of using this resume builder. The templates are professional and the guidance was invaluable.",
                 author: "Sarah J.",
                 position: "Marketing Manager",
-                image: "/images/testimonial-1.jpg"
+                image: "/images/testimonial-1.jpg",
+                rating: "4",
             },
             {
                 quote: "As someone who struggled with writing my resume, this tool made the process incredibly simple. Highly recommended!",
                 author: "Michael T.",
                 position: "Software Developer",
+                rating: "2",
                 image: "/images/testimonial-2.jpg"
             },
             {
                 quote: "The ATS-friendly templates helped my resume get past the initial screening. I'm now employed at a Fortune 500 company!",
                 author: "Jessica R.",
                 position: "Financial Analyst",
+                rating: "5",
                 image: "/images/testimonial-3.jpg"
             }
         ]
@@ -115,35 +118,61 @@ export const NavbarData = {
     ],
 }
 
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 export const FooterData = {
+    logo: {
+        img: "",
+        text: "ResBuilder",
+    },
+    socials : [
+        {
+            name: "X",
+            url: "",
+            icon: FaTwitter
+        },
+        {
+            name: "Instagram",
+            url: "",
+            icon: FaInstagram
+        },
+        {
+            name: "GitHub",
+            url: "",
+            icon: FaGithub
+        },
+        {
+            name: "LinkedIn",
+            url: "",
+            icon: FaLinkedin
+        },
+    ],
     category: [
         {
-          category: "Product",
-          links: [
-            { name: "Resume Templates", url: "/templates" },
-            { name: "CV Templates", url: "/cv-templates" },
-            { name: "Cover Letter Builder", url: "/cover-letter" },
-            { name: "Resume Examples", url: "/examples" }
-          ]
+            category: "Company",
+            links: [
+                { name: "About", url: "/about" },
+                { name: "Pricing", url: "/about" },
+                { name: "Contact", url: "/about" },
+                { name: "Blog", url: "/about" },
+                { name: "Testimonials", url: "/testimonials" },
+            ]
         },
         {
-          category: "Resources",
-          links: [
-            { name: "Career Blog", url: "/blog" },
-            { name: "Resume Writing Guide", url: "/guide" },
-            { name: "Interview Tips", url: "/interview-tips" },
-            { name: "Job Search Strategies", url: "/job-search" }
-          ]
+            category: "Product",
+            links: [
+                { name: "Templates", url: "/templates" },
+                { name: "CV Builder", url: "/cover-letter" },
+                { name: "Examples", url: "/examples" }
+            ]
         },
         {
-          category: "Company",
-          links: [
-            { name: "About Us", url: "/about" },
-            { name: "Testimonials", url: "/testimonials" },
-            { name: "Privacy Policy", url: "/privacy" },
-            { name: "Terms of Service", url: "/terms" }
-          ]
-        }
+            category: "Resources",
+            links: [
+                { name: "Guide", url: "/guide" },
+                { name: "Interview Tips", url: "/interview-tips" },
+                { name: "Strategies", url: "/job-search" }
+            ]
+        },
     ]
 }
 
@@ -175,49 +204,56 @@ export const faq = [
     }
 ]
 
-export const pricingPlans = [
-    {
-        id: "free",
-        name: "Free",
-        price: 0,
-        billingCycle: null,
-        features: [
-            "Access to 5 basic templates",
-            "Create 1 resume",
-            "Download in PDF format",
-            "Basic customization options"
-        ],
-        isPopular: false
-    },
-    {
-        id: "premium",
-        name: "Premium",
-        price: 12.99,
-        billingCycle: "monthly",
-        features: [
-            "Access to all 50+ templates",
-            "Create unlimited resumes",
-            "Download in PDF, DOCX, TXT formats",
-            "Advanced customization options",
-            "AI content suggestions",
-            "Cover letter builder",
-            "14-day money-back guarantee"
-        ],
-        isPopular: true
-    },
-    {
-        id: "professional",
-        name: "Professional",
-        price: 99.99,
-        billingCycle: "yearly",
-        features: [
-            "All Premium features",
-            "Priority customer support",
-            "Resume review by experts",
-            "LinkedIn profile optimization",
-            "Job application tracking",
-            "30-day money-back guarantee"
-        ],
-        isPopular: false
-    }
-]
+export const PriceData = {
+    heading: "Transparent Pricing Plan That grows with you",
+    subHeading: "Simple transparent pricing with no hidden fee. Choose the plan that fits your business needs and budget",
+    pricePlans :[
+        {
+            id: "free",
+            name: "Free",
+            price: 0,
+            billingCycle: null,
+            features: [
+                "Access to 5 basic templates",
+                "Create 1 resume",
+                "Download in PDF format",
+                "Basic customization options"
+            ],
+            isPopular: false,
+            ctaButton: "Start for Free"
+        },
+        {
+            id: "premium",
+            name: "Premium",
+            price: 8.99,
+            billingCycle: "monthly",
+            features: [
+                "Access to all 50+ templates",
+                "Create unlimited resumes",
+                "Download in PDF, DOCX, TXT formats",
+                "Advanced customization options",
+                "AI content suggestions",
+                "Cover letter builder",
+                "14-day money-back guarantee"
+            ],
+            isPopular: true,
+            ctaButton: "Get Started with Pro"
+        },
+        {
+            id: "professional",
+            name: "Professional",
+            price: 29.99,
+            billingCycle: "yearly",
+            features: [
+                "All Premium features",
+                "Priority customer support",
+                "Resume review by experts",
+                "LinkedIn profile optimization",
+                "Job application tracking",
+                "30-day money-back guarantee"
+            ],
+            isPopular: false,
+            ctaButton: "Get Started with Enterprise"
+        }
+    ],
+}
