@@ -72,18 +72,19 @@ const TemplateCarousel = () => {
         const visibleInd = [];
         const offset = Math.floor(totalTemp / 2);
         for(let i = -offset; i <= offset; i++){
-            let index = activeIndex + i % totalTemp;
+            let index = (activeIndex -1 + i) % totalTemp;
             if(index < 0){
                 index = totalTemp + index;
             }else if(index > totalTemp){
                 index = index - totalTemp
             }
             visibleInd.push({
-                id: index,
+                id: index +1,
                 position: i,
                 img: tempList[index].img
             })
         }
+        console.log({...visibleInd})
         return visibleInd
     }
 
