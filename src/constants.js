@@ -46,7 +46,7 @@ export const LandingData = {
                 quote: "I landed my dream job within 2 weeks of using this resume builder. The templates are professional and the guidance was invaluable.",
                 author: "Sarah J.",
                 position: "Marketing Manager",
-                image: "/testimonials/person2.jpg",
+                image: "testimonials/person2.jpg",
                 rating: "4",
             },
             {
@@ -54,14 +54,14 @@ export const LandingData = {
                 author: "Michael T.",
                 position: "Software Developer",
                 rating: "2",
-                image: "/testimonials/person1.jpg"
+                image: "testimonials/person1.jpg"
             },
             {
                 quote: "The ATS-friendly templates helped my resume get past the initial screening. I'm now employed at a Fortune 500 company!",
                 author: "Jessica R.",
                 position: "Financial Analyst",
                 rating: "5",
-                image: "/testimonials/person3.jpg"
+                image: "testimonials/person3.jpg"
             }
         ]
     },
