@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Routes, Route } from "react-router-dom"
 import { LandingPage, LoginPage, NotFoundPage,  SignUpPage } from "./pages"
 import RootLayout from "./layouts/RootLayout"
 function App() {
