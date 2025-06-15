@@ -1,0 +1,37 @@
+name: Deploy react template to github pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # checkout the repository
+      - name: checkout code
+        uses: actions/checkout@v3
+
+      # setup nodejs
+      - name: setup nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 24
+
+      # install dep
+      - name: Install dependencies
+        run: npm install
+
+      # build app
+      - name: Build project
+        run: npm run build
+
+      # deploy app
+      - name: Deploy application
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+
+
