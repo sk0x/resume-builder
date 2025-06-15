@@ -1,5 +1,7 @@
 name: Deploy react template to github pages
+
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
