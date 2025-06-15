@@ -71,23 +71,23 @@ export const LandingData = {
         templateList: [
             {
                 id: 1,
-                img: "/templates_images/template_1.jpg" ,
+                img: "templates_images/template_1.jpg" ,
             },
             {
                 id: 2,
-                img: "/templates_images/template_2.jpg" ,
+                img: "templates_images/template_2.jpg" ,
             },
             {
                 id: 3,
-                img: "/templates_images/template_3.jpg" ,
+                img: "templates_images/template_3.jpg" ,
             },
             {
                 id: 4,
-                img: "/templates_images/template_4.jpg" ,
+                img: "templates_images/template_4.jpg" ,
             },
             {
                 id: 5,
-                img: "/templates_images/template_5.jpg" ,
+                img: "templates_images/template_5.jpg" ,
             },
         ],
     },

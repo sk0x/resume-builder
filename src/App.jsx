@@ -1,11 +1,11 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import { LandingPage, LoginPage, NotFoundPage,  SignUpPage } from "./pages"
 import RootLayout from "./layouts/RootLayout"
+
 function App() {
     return (
-        <Router>
+        <HashRouter>
             <Routes>
-                {/* Public pages */}
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/sign-up" element={<SignUpPage />} />
                 <Route element={<RootLayout/>}>
@@ -13,7 +13,7 @@ function App() {
                 </Route>
                 <Route path="*" element={<NotFoundPage/>}/>
             </Routes >
-        </Router >
+        </HashRouter>
     )
 }
 
